@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dm2.ejerciciosficheros.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contenido a esxcribir: "/>
+
+    <EditText
+        android:id="@+id/txtCampo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/añadirFichInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR FICH. INT"
+            android:onClick="añadirFichInt"/>
+        <Button
+            android:id="@+id/añadirFichExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR FICH. EXT"
+            android:onClick="añadirFichExt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/leerFichInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEER FICH. INT"
+            android:onClick="leerFichInterno"/>
+        <Button
+            android:id="@+id/leerFichExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEER FICH. EXT"
+            android:onClick="leerFichExterno"/>
+        <Button
+            android:id="@+id/leerRecurso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEER RECURSO"
+            android:onClick="leerRecurso"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/borrarFichInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORRAR FICH. INT"
+            android:onClick="eliminarFichInterno"/>
+        <Button
+            android:id="@+id/borrarFichExt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORRAR FICH. EXT"
+            android:onClick="eliminarFichExterno"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:text="El contenido del fichero es"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtFichero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio 2"
+            android:onClick="Ejercicio2"
+            android:layout_margin="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejercicio3"
+            android:onClick="Ejercicio3"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
